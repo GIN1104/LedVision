@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#eef2f6" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" />
+  <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32" />
+  <link rel="icon" href="assets/favicon-16.png" type="image/png" sizes="16x16" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="192x192" />
+  <title>LedVision | מסכי LED לבית, לעסק ולחוץ</title>
+  <meta name="description" content="מסכי LED מודולריים (Video Wall / DVLED) מול טלוויזיה: גודל ללא הגבלה, תמונה רציפה ללא מסגרות, בהירות לחוץ. ייעוץ, התקנה ואחריות." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="early-a11y.js"></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main" data-i18n="a11y.skipToContent">דלג לתוכן</a>
+  <div class="site-shell">
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#top" class="logo">
+        <img
+          class="logo__img"
+          src="assets/Vision_Logo_brand.png"
+          alt="LedVision"
+          width="400"
+          height="159"
+          decoding="async"
+        />
+      </a>
+      <nav class="nav" id="nav" aria-label="Main">
+        <div class="nav__mobile-head">
+          <button type="button" class="nav__close" id="nav-close" aria-label="סגירת תפריט">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <a href="#solutions" data-i18n="nav.solutions">פתרונות</a>
+        <a href="#projects" data-i18n="nav.projects">פרויקטים</a>
+        <a href="#business" data-i18n="nav.business">לעסקים</a>
+        <a href="#home" data-i18n="nav.home">לבית</a>
+        <a href="#contact" data-i18n="nav.contact">צור קשר</a>
+      </nav>
+      <div class="header__actions">
+        <div class="lang-switch" id="lang-switch" role="group">
+          <button type="button" class="lang-switch__btn is-active" data-set-lang="he" aria-pressed="true">עברית</button>
+          <button type="button" class="lang-switch__btn" data-set-lang="en" aria-pressed="false">EN</button>
+          <button type="button" class="lang-switch__btn" data-set-lang="ru" aria-pressed="false">RU</button>
+        </div>
+        <a class="btn btn--ghost" href="tel:+74951234567" data-i18n="nav.call">התקשרו</a>
+        <button class="burger" type="button" aria-label="תפריט" aria-expanded="false" id="burger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+  <section class="hero" data-hero-parallax data-hero-parallax-src="pic/hero.jpg">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <p class="hero__eyebrow" data-i18n="hero.eyebrow">LED מודולרי — לא «טלוויזיה רגילה»</p>
+        <h1 class="hero__title">
+          <span class="hero__title-line" data-i18n="hero.titleLine1">מסכי לד:</span>
+          <span class="hero__title-line" data-i18n="hero.titleLine2">סקיילביליות, בהירות ומקצועיות</span>
+        </h1>
+        <p class="hero__text" data-i18n="hero.text">מדברים על מסכי LED מודולריים (Video Wall / DVLED) — לא על טלוויזיה מהמדף. פאנלים קטנים שמתחברים לקיר בכל גודל, גם קיר שלם, בלי תקרת אינץ׳ קבועה.</p>
+        <div class="hero__cta">
+          <a href="#contact" class="btn btn--primary" data-i18n="hero.cta1">ייעוץ חינם</a>
+          <a href="#projects" class="btn btn--outline" data-i18n="hero.cta2">לצפייה בפרויקטים</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="promo">
+    <div class="container promo__inner">
+      <div class="promo__badge" data-i18n="promo.badge">מבצע</div>
+      <div class="promo__text">
+        <h2 class="promo__title" data-i18n="promo.title">עונת הספורט הגדול — הנחות על כל סדרת ה-LED</h2>
+        <p data-i18n="promo.text">להזמנה עד סוף החודש — התקנה מקצועית במתנה.</p>
+      </div>
+      <a href="tel:+74951234567" class="btn btn--primary promo__btn" data-i18n="promo.btn">התקשרו עכשיו</a>
+    </div>
+  </section>
+
+  <section class="clients">
+    <div class="container">
+      <p class="section-label" data-i18n="clients.label">סומכים עלינו</p>
+      <div class="clients__track" id="clients-track" aria-hidden="true">
+        <span data-client-i="0">קמעונאות</span><span data-client-i="1">סוכנויות רכב</span><span data-client-i="2">מסעדות</span><span data-client-i="3">אולמות אירועים</span><span data-client-i="4">כושר</span><span data-client-i="5">טלקום</span>
+        <span data-client-i="0">קמעונאות</span><span data-client-i="1">סוכנויות רכב</span><span data-client-i="2">מסעדות</span><span data-client-i="3">אולמות אירועים</span><span data-client-i="4">כושר</span><span data-client-i="5">טלקום</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="solutions">
+    <div class="container">
+      <h2 class="section__title" data-i18n="solutions.title">יתרונות מסכי LED מודולריים מול טלוויזיות</h2>
+      <p class="section__lead" data-i18n="solutions.lead">מורכבים מפאנלים קטנים שמתחברים — אפשר לבנות מסך בכל גודל, גם קיר שלם. להלן ההבדלים העיקריים מול טלוויזיה רגילה.</p>
+      <div class="solutions-cards">
+        <article class="card" data-card-i="0">
+          <div class="card__icon">📏</div>
+          <h3 data-i18n-card-title>חצר ובריכה</h3>
+          <p data-i18n-card-text>הגנה מפני מים, בהירות לשמיים הפתוחים, קולנוע ליד המים.</p>
+        </article>
+        <article class="card" data-card-i="1">
+          <div class="card__icon">🧱</div>
+          <h3 data-i18n-card-title>אולמות אירועים</h3>
+          <p data-i18n-card-text>הופעות, חתונות, אירועים חברה — בלי הבזק ועם תמונה חלקה.</p>
+        </article>
+        <article class="card" data-card-i="2">
+          <div class="card__icon">☀️</div>
+          <h3 data-i18n-card-title>עסקים ו-HoReCa</h3>
+          <p data-i18n-card-text>תפריטים, מבצעים, מיתוג — תוכן בזמן אמת.</p>
+        </article>
+        <article class="card" data-card-i="3">
+          <div class="card__icon">🔧</div>
+          <h3 data-i18n-card-title>שילוט חוצות</h3>
+          <p data-i18n-card-text>קריאות יום ולילה, עמידות במזג אוויר.</p>
+        </article>
+        <article class="card" data-card-i="4">
+          <div class="card__icon">🎨</div>
+          <h3 data-i18n-card-title>חדרי ישיבות</h3>
+          <p data-i18n-card-text>קירות וידאו למצגות ולווידאו קונפרנס.</p>
+        </article>
+        <article class="card" data-card-i="5">
+          <div class="card__icon">👀</div>
+          <h3 data-i18n-card-title>מועדונים וסטודיו</h3>
+          <p data-i18n-card-text>ויזואל דינמי וסנכרון עם תאורה.</p>
+        </article>
+        <article class="card" data-card-i="6">
+          <div class="card__icon">⏱️</div>
+          <h3 data-i18n-card-title>חנויות</h3>
+          <p data-i18n-card-text>חלונות ראווה ואזורי תצוגה שמושכים מבט.</p>
+        </article>
+        <article class="card" data-card-i="7">
+          <div class="card__icon">🧠</div>
+          <h3 data-i18n-card-title>סטודיו והקלטות</h3>
+          <p data-i18n-card-text>אור אחיד ודיוק צבע לפרודקשן.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dim">
+    <div class="container">
+      <h2 class="section__title" data-i18n="features.title">מצוינות ויזואלית ללא פשרות</h2>
+      <div class="grid grid--2 features">
+        <div class="feature" data-feature-i="0">
+          <h3>קצב רענון גבוה</h3>
+          <p>תמונה חלקה בלי הבזק מורגש — נוחות לעין בכל תוכן.</p>
+        </div>
+        <div class="feature" data-feature-i="1">
+          <h3>התאמה אישית מלאה</h3>
+          <p>מסכים מעוגלים ושקופים, פורמטים לא סטנדרטיים לפי הפרויקט.</p>
+        </div>
+        <div class="feature" data-feature-i="2">
+          <h3>צבע ובהירות</h3>
+          <p>כיול ובחירת בהירות לחלל או לרחוב.</p>
+        </div>
+        <div class="feature" data-feature-i="3">
+          <h3>הגנה מפני התקפות</h3>
+          <p>סינון קלט, CSP, ובצד השרת — שאילתות פרמטריות וקידוד פלט.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section__title" data-i18n="projects.title">המסכים שלנו בפעולה</h2>
+      <p class="section__lead" data-i18n="projects.lead">דוגמאות לפרויקטים שבוצעו (הדגמה).</p>
+      <div class="grid grid--2 projects">
+        <article class="project" data-project-i="0">
+          <div class="project__visual">
+            <img src="pic/project-1.jpg" alt="" loading="lazy" decoding="async" width="960" height="600" />
+          </div>
+          <div class="project__body">
+            <h3>קיר וידאו 4×3 מ׳ במרכז אירועים</h3>
+            <p class="project__loc">תל אביב</p>
+          </div>
+        </article>
+        <article class="project" data-project-i="1">
+          <div class="project__visual">
+            <img src="pic/project-2.jpg" alt="" loading="lazy" decoding="async" width="960" height="600" />
+          </div>
+          <div class="project__body">
+            <h3>LED חיצוני לסוכנות רכב</h3>
+            <p class="project__loc">חיפה</p>
+          </div>
+        </article>
+        <article class="project" data-project-i="2">
+          <div class="project__visual">
+            <img src="pic/project-3.jpg" alt="" loading="lazy" decoding="async" width="960" height="600" />
+          </div>
+          <div class="project__body">
+            <h3>מסך 137 אינץ׳ ליד בריכה</h3>
+            <p class="project__loc">ירושלים</p>
+          </div>
+        </article>
+        <article class="project" data-project-i="3">
+          <div class="project__visual">
+            <img src="pic/project-4.jpg" alt="" loading="lazy" decoding="async" width="960" height="600" />
+          </div>
+          <div class="project__body">
+            <h3>שלושה מסכים במרכז משחקים</h3>
+            <p class="project__loc">באר שבע</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dim" id="fb-gallery" aria-labelledby="fb-gallery-title">
+    <div class="container">
+      <h2 class="section__title" id="fb-gallery-title" data-i18n="fbFeed.title">עוד מהשטח</h2>
+      <p class="section__lead" data-i18n="fbFeed.lead">תמונות ועדכונים מהעמוד שלנו בפייסבוק.</p>
+      <div class="fb-media" role="list">
+        <a class="fb-media__item fb-media__item--post" role="listitem" href="https://www.facebook.com/photo/?fbid=623242629817073&amp;set=pb.100063940235191.-2207520000" target="_blank" rel="noopener noreferrer" data-fb-post="https://www.facebook.com/photo/?fbid=623242629817073&amp;set=pb.100063940235191.-2207520000">
+          <img class="fb-media__preview" src="assets/fb-photo-preview.svg" alt="" loading="lazy" decoding="async" width="1600" height="900" />
+          <span class="fb-media__embed-host" aria-hidden="true"></span>
+        </a>
+
+        <a class="fb-media__item fb-media__item--post" role="listitem" href="https://www.facebook.com/photo/?fbid=2886658861417328&amp;set=pb.100063940235191.-2207520000" target="_blank" rel="noopener noreferrer" data-fb-post="https://www.facebook.com/photo/?fbid=2886658861417328&amp;set=pb.100063940235191.-2207520000">
+          <img class="fb-media__preview" src="assets/fb-photo-preview.svg" alt="" loading="lazy" decoding="async" width="1600" height="900" />
+          <span class="fb-media__embed-host" aria-hidden="true"></span>
+        </a>
+        <a class="fb-media__item fb-media__item--post" role="listitem" href="https://www.facebook.com/photo/?fbid=2886658744750673&amp;set=pb.100063940235191.-2207520000" target="_blank" rel="noopener noreferrer" data-fb-post="https://www.facebook.com/photo/?fbid=2886658744750673&amp;set=pb.100063940235191.-2207520000">
+          <img class="fb-media__preview" src="assets/fb-photo-preview.svg" alt="" loading="lazy" decoding="async" width="1600" height="900" />
+          <span class="fb-media__embed-host" aria-hidden="true"></span>
+        </a>
+        <a class="fb-media__item fb-media__item--post" role="listitem" href="https://www.facebook.com/photo/?fbid=2886658598084021&amp;set=pb.100063940235191.-2207520000" target="_blank" rel="noopener noreferrer" data-fb-post="https://www.facebook.com/photo/?fbid=2886658598084021&amp;set=pb.100063940235191.-2207520000">
+          <img class="fb-media__preview" src="assets/fb-photo-preview.svg" alt="" loading="lazy" decoding="async" width="1600" height="900" />
+          <span class="fb-media__embed-host" aria-hidden="true"></span>
+        </a>
+        <a class="fb-media__item fb-media__item--post" role="listitem" href="https://www.facebook.com/photo/?fbid=2886658408084040&amp;set=pb.100063940235191.-2207520000" target="_blank" rel="noopener noreferrer" data-fb-post="https://www.facebook.com/photo/?fbid=2886658408084040&amp;set=pb.100063940235191.-2207520000">
+          <img class="fb-media__preview" src="assets/fb-photo-preview.svg" alt="" loading="lazy" decoding="async" width="1600" height="900" />
+          <span class="fb-media__embed-host" aria-hidden="true"></span>
+        </a>
+        <a class="fb-media__item fb-media__item--post" role="listitem" href="https://www.facebook.com/photo/?fbid=2886658294750718&amp;set=pb.100063940235191.-2207520000" target="_blank" rel="noopener noreferrer" data-fb-post="https://www.facebook.com/photo/?fbid=2886658294750718&amp;set=pb.100063940235191.-2207520000">
+          <img class="fb-media__preview" src="assets/fb-photo-preview.svg" alt="" loading="lazy" decoding="async" width="1600" height="900" />
+          <span class="fb-media__embed-host" aria-hidden="true"></span>
+        </a>
+        <a class="fb-media__item fb-media__item--post" role="listitem" href="https://www.facebook.com/photo/?fbid=2800632990019916&amp;set=pb.100063940235191.-2207520000" target="_blank" rel="noopener noreferrer" data-fb-post="https://www.facebook.com/photo/?fbid=2800632990019916&amp;set=pb.100063940235191.-2207520000">
+          <img class="fb-media__preview" src="assets/fb-photo-preview.svg" alt="" loading="lazy" decoding="async" width="1600" height="900" />
+          <span class="fb-media__embed-host" aria-hidden="true"></span>
+        </a>
+        <a class="fb-media__item fb-media__item--post" role="listitem" href="https://www.facebook.com/photo/?fbid=2800632903353258&amp;set=pb.100063940235191.-2207520000" target="_blank" rel="noopener noreferrer" data-fb-post="https://www.facebook.com/photo/?fbid=2800632903353258&amp;set=pb.100063940235191.-2207520000">
+          <img class="fb-media__preview" src="assets/fb-photo-preview.svg" alt="" loading="lazy" decoding="async" width="1600" height="900" />
+          <span class="fb-media__embed-host" aria-hidden="true"></span>
+        </a>
+        <a class="fb-media__item fb-media__item--video" role="listitem" href="https://www.facebook.com/VisionLEDSys/videos/3163619006989840/" target="_blank" rel="noopener noreferrer" data-fb-embed="https://www.facebook.com/VisionLEDSys/videos/3163619006989840/">
+          <img class="fb-media__preview" src="assets/fb-video-preview.svg" alt="" loading="lazy" decoding="async" width="1600" height="900" />
+          <span class="fb-media__embed-host" aria-hidden="true"></span>
+          <span class="fb-media__play" aria-hidden="true">▶</span>
+          <span class="fb-media__date">23.03.2020</span>
+        </a>
+        <a class="fb-media__item fb-media__item--video" role="listitem" href="https://www.facebook.com/100063940235191/videos/780269625795379/" target="_blank" rel="noopener noreferrer" data-fb-embed="https://www.facebook.com/100063940235191/videos/780269625795379/">
+          <img class="fb-media__preview" src="assets/fb-video-preview.svg" alt="" loading="lazy" decoding="async" width="1600" height="900" />
+          <span class="fb-media__embed-host" aria-hidden="true"></span>
+          <span class="fb-media__play" aria-hidden="true">▶</span>
+          <span class="fb-media__date">16.02.2020</span>
+        </a>
+        <a class="fb-media__item fb-media__item--video" role="listitem" href="https://www.facebook.com/100063940235191/videos/592870314901908/" target="_blank" rel="noopener noreferrer" data-fb-embed="https://www.facebook.com/100063940235191/videos/592870314901908/">
+          <img class="fb-media__preview" src="assets/fb-video-preview.svg" alt="" loading="lazy" decoding="async" width="1600" height="900" />
+          <span class="fb-media__embed-host" aria-hidden="true"></span>
+          <span class="fb-media__play" aria-hidden="true">▶</span>
+          <span class="fb-media__date">06.02.2020</span>
+        </a>
+        <a class="fb-media__item fb-media__item--video" role="listitem" href="https://www.facebook.com/100063940235191/videos/190220581866340/" target="_blank" rel="noopener noreferrer" data-fb-embed="https://www.facebook.com/100063940235191/videos/190220581866340/">
+          <img class="fb-media__preview" src="assets/fb-video-preview.svg" alt="" loading="lazy" decoding="async" width="1600" height="900" />
+          <span class="fb-media__embed-host" aria-hidden="true"></span>
+          <span class="fb-media__play" aria-hidden="true">▶</span>
+          <span class="fb-media__date">18.11.2018</span>
+        </a>
+        <a class="fb-media__item fb-media__item--video" role="listitem" href="https://www.facebook.com/100063940235191/videos/1801849386564953/" target="_blank" rel="noopener noreferrer" data-fb-embed="https://www.facebook.com/100063940235191/videos/1801849386564953/">
+          <img class="fb-media__preview" src="assets/fb-video-preview.svg" alt="" loading="lazy" decoding="async" width="1600" height="900" />
+          <span class="fb-media__embed-host" aria-hidden="true"></span>
+          <span class="fb-media__play" aria-hidden="true">▶</span>
+          <span class="fb-media__date">30.06.2018</span>
+        </a>
+        <a class="fb-media__item fb-media__item--video" role="listitem" href="https://www.facebook.com/100063940235191/videos/1801847973231761/" target="_blank" rel="noopener noreferrer" data-fb-embed="https://www.facebook.com/100063940235191/videos/1801847973231761/">
+          <img class="fb-media__preview" src="assets/fb-video-preview.svg" alt="" loading="lazy" decoding="async" width="1600" height="900" />
+          <span class="fb-media__embed-host" aria-hidden="true"></span>
+          <span class="fb-media__play" aria-hidden="true">▶</span>
+          <span class="fb-media__date">30.06.2018 · II</span>
+        </a>
+      </div>
+      <p class="section__lead fb-gallery__note" data-i18n="fbFeed.note">התאריכים ליד הסרטונים מוצגים כפי שמופיעים בפייסבוק.</p>
+      <div class="fb-media__more">
+        <a class="btn btn--outline" href="https://www.facebook.com/share/1ENvrf56PA/" target="_blank" rel="noopener noreferrer" data-i18n="fbFeed.more">לכל התמונות בפייסבוק</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dim trust">
+    <div class="container">
+      <div class="grid grid--3 trust__grid">
+        <div class="trust__item" data-trust-i="0">
+          <strong>עד 3 שנים</strong>
+          <span>אחריות על ציוד ועבודה</span>
+        </div>
+        <div class="trust__item" data-trust-i="1">
+          <strong>מלאי</strong>
+          <span>קונפיגורציות פופולריות — אספקה מהירה</span>
+        </div>
+        <div class="trust__item" data-trust-i="2">
+          <strong>15+ שנים</strong>
+          <span>ניסיון ב-LED ואינטגרציה</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="business">
+    <div class="container">
+      <h2 class="section__title" data-i18n="business.title">LED לעסקים — השקעה שחוזרת לעצמה</h2>
+      <p class="section__lead" data-i18n="business.lead">מסך דינמי מחזק זיהוי מותג ומסייע למכור.</p>
+      <div class="grid grid--2 benefits">
+        <div class="benefit" data-business-i="0">
+          <span class="benefit__num">01</span>
+          <h3>צמיחת מכירות</h3>
+          <p>תוכן דינמי ובולט שומר על קשב ומעודד רכישות אימפולסיביות.</p>
+        </div>
+        <div class="benefit" data-business-i="1">
+          <span class="benefit__num">02</span>
+          <h3>חשיפה מקסימלית</h3>
+          <p>נראות בשמש ובערב — המותג שלכם נראה לכל העוברים.</p>
+        </div>
+        <div class="benefit" data-business-i="2">
+          <span class="benefit__num">03</span>
+          <h3>שיווק גמיש</h3>
+          <p>עדכנו מבצעים ומלאי מיד — בלי הדפסת באנרים חדשים.</p>
+        </div>
+        <div class="benefit" data-business-i="3">
+          <span class="benefit__num">04</span>
+          <h3>ROI לאורך זמן</h3>
+          <p>השקעה חד־פעמית ושנות עבודה יציבות בלי להחליף שלטים פיזיים.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dim" id="home">
+    <div class="container">
+      <h2 class="section__title" data-i18n="homeSection.title">LED לבית ולחצר</h2>
+      <p class="section__lead" data-i18n="homeSection.lead">קולנוע בסלון או ליד הבריכה — בלי פשרות על בהירות.</p>
+      <div class="grid grid--2 benefits">
+        <div class="benefit" data-home-i="0">
+          <span class="benefit__num">◆</span>
+          <h3>קולנוע ביתי</h3>
+          <p>פורמט גדול עם תמונה חדה גם בחדר מואר — חלופה למקרן.</p>
+        </div>
+        <div class="benefit" data-home-i="1">
+          <span class="benefit__num">◆</span>
+          <h3>חצר ואזור בילוי</h3>
+          <p>הגנה מפני לחות וקרינת UV — אידיאלי ליד בריכה או מרפסת.</p>
+        </div>
+        <div class="benefit" data-home-i="2">
+          <span class="benefit__num">◆</span>
+          <h3>כל גודל</h3>
+          <p>מפאנלים קומפקטיים ועד קירות שלמים — בלי תקרת גודל של טלוויזיה.</p>
+        </div>
+        <div class="benefit" data-home-i="3">
+          <span class="benefit__num">◆</span>
+          <h3>מראה פרימיום</h3>
+          <p>המסך כחלק מהעיצוב: אמנות, שעון, אווירה — במכשיר אחד.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reviews">
+    <div class="container">
+      <h2 class="section__title" data-i18n="reviews.title">מה הלקוחות אומרים</h2>
+      <div class="reviews">
+        <blockquote class="review" data-review-i="0">
+          <p>«שירות ברמה הגבוהה ביותר, מוצר מצוין. עזרו בחישוב פיקסל פיץ׳, התקנה נקייה. ממליץ בחום.»</p>
+          <footer>— חברת קמעונאות</footer>
+        </blockquote>
+        <blockquote class="review" data-review-i="1">
+          <p>«הזמנו מסך לאולם. מחיר טוב יותר מהמתחרים, ליווי מהבקשה ועד ההפעלה — בלי הפתעות.»</p>
+          <footer>— סוכנות אירועים, תל אביב</footer>
+        </blockquote>
+        <blockquote class="review" data-review-i="2">
+          <p>«מסך ליד הבריכה — בדיוק למסיבות. תמונה בהירה והכל אטום למים.»</p>
+          <footer>— לקוח פרטי</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dim" id="blog">
+    <div class="container">
+      <h2 class="section__title" data-i18n="blog.title">חומרים מקצועיים</h2>
+      <div class="grid grid--3 blog">
+        <a href="#" class="blog-card blog-card--stub" data-blog-i="0">
+          <span class="blog-card__meta">8 דק׳ קריאה</span>
+          <h3>מהו פיקסל פיץ׳ ואיך לבחור מסך</h3>
+          <p>מרחק בין פיקסלים ומרחק צפייה אופטימלי.</p>
+        </a>
+        <a href="#" class="blog-card blog-card--stub" data-blog-i="1">
+          <span class="blog-card__meta">7 דק׳ קריאה</span>
+          <h3>בהירות במסכי LED — ניטס ותנאי שטח</h3>
+          <p>למה למסך חוץ נדרשת בהירות שונה מפנים.</p>
+        </a>
+        <a href="#" class="blog-card blog-card--stub" data-blog-i="2">
+          <span class="blog-card__meta">10 דק׳ קריאה</span>
+          <h3>איך בנוי מסך LED</h3>
+          <p>מודולים, ספקי כוח, בקרים — בקצרה.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <h2 id="contact-title" class="section__title" data-i18n="contact.title">בואו נדבר</h2>
+      <p class="section__lead contact__intro" data-i18n="contact.lead">צריכים חישוב או ביקור טכנאי? השאירו פרטים — נחזור תוך יום עסקים.</p>
+      <div class="contact__grid">
+        <div class="contact__info">
+          <ul class="contact__list">
+            <li><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+            <li><a href="mailto:info@ledvision.example">info@ledvision.example</a></li>
+            <li data-i18n="contact.addr">החרש 18, חיפה, ישראל</li>
+          </ul>
+        </div>
+        <form class="form" id="lead-form">
+          <label>
+            <span data-i18n="form.name">שם</span>
+            <input type="text" name="name" required autocomplete="name" maxlength="120" />
+          </label>
+          <label>
+            <span data-i18n="form.phone">טלפון</span>
+            <input type="tel" name="phone" required autocomplete="tel" maxlength="32" inputmode="tel" />
+          </label>
+          <label>
+            <span data-i18n="form.comment">הערה</span>
+            <textarea name="message" rows="4" data-i18n-placeholder placeholder="שטח, פנים או חוץ…" maxlength="4000" autocomplete="off"></textarea>
+          </label>
+          <button type="submit" class="btn btn--primary btn--block" data-i18n="form.submit">שליחה</button>
+          <p class="form__note" data-i18n="form.note">בלחיצה על השליחה אתם מסכימים לעיבוד המידע האישי.</p>
+        </form>
+      </div>
+
+      <div class="contact__map" id="map" aria-labelledby="map-title">
+        <h3 id="map-title" class="contact__map-title" data-i18n="map.title">איך מגיעים</h3>
+        <p class="map-address" data-i18n="contact.addr">החרש 18, חיפה, ישראל</p>
+        <div class="map-frame-wrap">
+          <iframe
+            id="map-iframe"
+            class="map-frame"
+            src="https://www.google.com/maps?q=18+HaHarash+St%2C+Haifa%2C+Israel&amp;z=16&amp;hl=iw&amp;output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="מפה"
+          ></iframe>
+        </div>
+        <div class="map-actions">
+          <a
+            class="btn btn--outline map-actions__btn"
+            href="https://waze.com/ul?q=18%20HaHarash%20St%2C%20Haifa%2C%20Israel&amp;navigate=yes"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-i18n="map.waze"
+            >פתיחה ב-Waze</a>
+          <a
+            class="btn btn--primary map-actions__btn"
+            href="https://www.google.com/maps/search/?api=1&amp;query=18%20HaHarash%20St%2C%20Haifa%2C%20Israel"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-i18n="map.google"
+            >Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="logo logo--footer">
+        <img
+          class="logo__img logo__img--footer"
+          src="assets/Vision_Logo_brand.png"
+          alt="LedVision"
+          width="320"
+          height="127"
+          decoding="async"
+        />
+      </div>
+      <div class="footer__meta">
+        <p class="footer__copy" data-i18n-footer>© 2026 LedVision</p>
+        <div class="footer__a11y-row">
+          <button type="button" class="footer__a11y footer__a11y--btn" id="open-a11y-drawer" data-i18n="footer.a11yLink">
+            הצהרת נגישות
+          </button>
+          <span class="footer__a11y-sep" aria-hidden="true">·</span>
+          <a href="accessibility.html" class="footer__a11y-doc" data-i18n="footer.a11yDoc">להצהרה המלאה</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="a11y-drawer-root" class="a11y-drawer-root" aria-hidden="true" data-a11y-root>
+    <div
+      class="a11y-drawer__backdrop"
+      id="a11y-drawer-backdrop"
+      tabindex="-1"
+    ></div>
+    <aside
+      class="a11y-drawer__panel"
+      id="a11y-drawer-panel"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="a11y-drawer-title"
+      tabindex="-1"
+    >
+      <div class="a11y-drawer__sheet">
+        <header class="a11y-drawer__header">
+          <h2 id="a11y-drawer-title" class="a11y-drawer__title" data-i18n="a11yDrawer.title">הצהרת נגישות</h2>
+          <button type="button" class="a11y-drawer__close" id="a11y-drawer-close" aria-label="סגירה">
+            <span aria-hidden="true">×</span>
+          </button>
+        </header>
+        <div class="a11y-drawer__body">
+          <p class="a11y-drawer__intro" data-i18n="a11yDrawer.intro"></p>
+          <h3 class="a11y-drawer__subtitle" data-i18n="a11yDrawer.subtitle"></h3>
+          <ul class="a11y-drawer__list">
+            <li data-a11y-bullet="0"></li>
+            <li data-a11y-bullet="1"></li>
+            <li data-a11y-bullet="2"></li>
+            <li data-a11y-bullet="3"></li>
+            <li data-a11y-bullet="4"></li>
+          </ul>
+          <p class="a11y-drawer__outro" data-i18n="a11yDrawer.outro"></p>
+          <a href="accessibility.html" class="a11y-drawer__full-link" data-i18n="a11yDrawer.fullLink"></a>
+        </div>
+      </div>
+    </aside>
+  </div>
+  </div>
+
+  <div class="mobile-cta" aria-label="Quick actions">
+    <div class="mobile-cta__inner" role="group">
+      <a class="btn btn--primary mobile-cta__btn mobile-cta__btn--wa" href="https://wa.me/74951234567" target="_blank" rel="noopener noreferrer">
+        <span class="mobile-cta__ico" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="18" height="18" focusable="false" aria-hidden="true">
+            <path fill="currentColor" d="M19.11 17.52c-.24-.12-1.41-.7-1.63-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.03-.38-1.96-1.22-.72-.64-1.2-1.44-1.34-1.68-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.48-.4-.42-.54-.42h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2 0 1.18.86 2.32.98 2.48.12.16 1.7 2.6 4.12 3.64.58.25 1.03.4 1.38.52.58.18 1.1.16 1.52.1.46-.07 1.41-.58 1.61-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/>
+            <path fill="currentColor" d="M16 3.2c-7.06 0-12.8 5.52-12.8 12.32 0 2.15.58 4.26 1.69 6.11L3.2 28.8l7.47-1.59c1.97 1.06 4.19 1.62 5.33 1.62 7.06 0 12.8-5.52 12.8-12.32S23.06 3.2 16 3.2zm0 22.23c-1.04 0-3.03-.54-4.76-1.53l-.34-.19-4.43.94.96-4.22-.22-.35c-1.03-1.64-1.57-3.5-1.57-5.39 0-5.54 4.58-10.05 10.19-10.05s10.19 4.51 10.19 10.05S21.61 25.43 16 25.43z"/>
+          </svg>
+        </span>
+        <span data-i18n="mobileCta.whatsapp">WhatsApp</span>
+      </a>
+      <a class="btn btn--outline mobile-cta__btn mobile-cta__btn--call" href="tel:+74951234567">
+        <span class="mobile-cta__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" focusable="false" aria-hidden="true">
+            <path fill="currentColor" d="M6.62 10.79a15.06 15.06 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.07 21 3 13.93 3 5c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+          </svg>
+        </span>
+        <span data-i18n="mobileCta.call">Позвонить</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="a11y-toolbar" id="a11y-toolbar" data-a11y-toolbar>
+    <button
+      type="button"
+      class="a11y-toolbar__fab"
+      id="a11y-toolbar-fab"
+      aria-expanded="false"
+      aria-controls="a11y-toolbar-panel"
+    >
+      <span class="a11y-toolbar__fab-icon" aria-hidden="true">♿</span>
+    </button>
+    <div
+      class="a11y-toolbar__panel"
+      id="a11y-toolbar-panel"
+      role="region"
+      aria-labelledby="a11y-toolbar-title"
+      hidden
+    >
+      <h2 id="a11y-toolbar-title" class="a11y-toolbar__title" data-i18n="toolbar.title">התאמות נגישות</h2>
+      <ul class="a11y-toolbar__list">
+        <li>
+          <button type="button" class="a11y-toolbar__btn" data-a11y-tool="text" data-text-level="0">
+            <span class="a11y-toolbar__ico" aria-hidden="true">A+</span>
+            <span class="a11y-toolbar__btn-text">
+              <span data-i18n="toolbar.textInc">הגדלת טקסט</span>
+              <span class="a11y-toolbar__hint" id="a11y-toolbar-text-hint" data-a11y-text-hint></span>
+            </span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="a11y-toolbar__btn" data-a11y-tool="contrast" aria-pressed="false">
+            <span class="a11y-toolbar__ico" aria-hidden="true">◐</span>
+            <span data-i18n="toolbar.highContrast">ניגודיות גבוהה</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="a11y-toolbar__btn" data-a11y-tool="links" aria-pressed="false">
+            <span class="a11y-toolbar__ico" aria-hidden="true">🔗</span>
+            <span data-i18n="toolbar.links">הדגשת קישורים</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="a11y-toolbar__btn" data-a11y-tool="font" aria-pressed="false">
+            <span class="a11y-toolbar__ico" aria-hidden="true">Aa</span>
+            <span data-i18n="toolbar.readableFont">גופן קריא</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="a11y-toolbar__btn" data-a11y-tool="motion" aria-pressed="false">
+            <span class="a11y-toolbar__ico" aria-hidden="true">⏸</span>
+            <span data-i18n="toolbar.stopMotion">עצירת אנימציות</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="a11y-toolbar__btn" data-a11y-tool="cursor" aria-pressed="false">
+            <span class="a11y-toolbar__ico" aria-hidden="true">🖱</span>
+            <span data-i18n="toolbar.largeCursor">סמן מוגדל</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="a11y-toolbar__btn" data-a11y-tool="grayscale" aria-pressed="false">
+            <span class="a11y-toolbar__ico" aria-hidden="true">🌑</span>
+            <span data-i18n="toolbar.grayscale">מצב אפור</span>
+          </button>
+        </li>
+      </ul>
+      <button type="button" class="a11y-toolbar__reset" id="a11y-toolbar-reset" data-i18n="toolbar.reset">איפוס הכל</button>
+    </div>
+  </div>
+
+  <script src="i18n.js"></script>
+  <script src="security-utils.js"></script>
+  <script src="a11y-toolbar.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

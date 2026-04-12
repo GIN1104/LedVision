@@ -1,0 +1,10 @@
+# Netlify: заголовки безопасности (на локальном file:// не действуют — см. комментарий в index при необходимости)
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()"
+    # CSP: снижает XSS; скрипты только с этого домена; карта Google во фрейме; стили Google Fonts
+    Content-Security-Policy = "default-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'; frame-src https://www.google.com https://*.google.com https://www.facebook.com https://web.facebook.com; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self'; upgrade-insecure-requests"
