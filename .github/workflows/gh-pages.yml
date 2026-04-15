@@ -17,6 +17,9 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -28,11 +31,6 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: .
-          # Exclude typical non-site files
-          exclude: |
-            .git/**
-            .github/**
-            node_modules/**
 
       - name: Deploy to GitHub Pages
         id: deployment
