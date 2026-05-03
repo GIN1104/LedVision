@@ -2,6 +2,9 @@
   if (window.LedVisionI18n && typeof window.LedVisionI18n.init === "function") {
     window.LedVisionI18n.init();
   }
+  if (window.LedVisionTheme && typeof window.LedVisionTheme.init === "function") {
+    window.LedVisionTheme.init();
+  }
 
   var burger = document.getElementById("burger");
   var nav = document.getElementById("nav");

@@ -19,6 +19,8 @@
         projects: "פרויקטים",
         contact: "צור קשר",
         call: "התקשרו",
+        themeUseDark: "מעבר למצב כהה",
+        themeUseLight: "מעבר למצב בהיר",
       },
       mobileCta: {
         whatsapp: "וואטסאפ",
@@ -284,6 +286,8 @@
         projects: "Projects",
         contact: "Contact",
         call: "Call us",
+        themeUseDark: "Switch to dark theme",
+        themeUseLight: "Switch to light theme",
       },
       mobileCta: {
         whatsapp: "WhatsApp",
@@ -549,6 +553,8 @@
         projects: "Проекты",
         contact: "Контакты",
         call: "Позвонить",
+        themeUseDark: "Включить тёмную тему",
+        themeUseLight: "Включить светлую тему",
       },
       mobileCta: {
         whatsapp: "WhatsApp",
@@ -983,6 +989,10 @@
       window.LedVisionA11yToolbar.refresh();
     }
 
+    if (global.LedVisionTheme && typeof global.LedVisionTheme.refreshAria === "function") {
+      global.LedVisionTheme.refreshAria();
+    }
+
     global.__formAlertMsg = t.formAlert;
     global.__formValidationMsg = t.form && t.form.validationError ? t.form.validationError : "";
   }
@@ -1002,6 +1012,9 @@
     });
     if (global.LedVisionA11yToolbar && typeof global.LedVisionA11yToolbar.refresh === "function") {
       global.LedVisionA11yToolbar.refresh();
+    }
+    if (global.LedVisionTheme && typeof global.LedVisionTheme.refreshAria === "function") {
+      global.LedVisionTheme.refreshAria();
     }
   }
 

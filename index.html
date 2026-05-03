@@ -16,6 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <script src="early-a11y.js"></script>
+  <script src="early-theme.js"></script>
 </head>
 <body id="top">
   <a class="skip-link" href="#main" data-i18n="a11y.skipToContent">דלג לתוכן</a>
@@ -45,6 +46,16 @@
         <a href="#contact" data-i18n="nav.contact">צור קשר</a>
       </nav>
       <div class="header__actions">
+        <button
+          type="button"
+          class="theme-toggle"
+          data-theme-toggle
+          aria-pressed="false"
+          aria-label=""
+        >
+          <span class="theme-toggle__moon" aria-hidden="true">🌙</span>
+          <span class="theme-toggle__sun" aria-hidden="true">☀️</span>
+        </button>
         <div class="lang-switch" id="lang-switch" role="group">
           <button type="button" class="lang-switch__btn is-active" data-set-lang="he" aria-pressed="true">עברית</button>
           <button type="button" class="lang-switch__btn" data-set-lang="en" aria-pressed="false">EN</button>
@@ -641,6 +652,7 @@
   <script src="i18n.js"></script>
   <script src="security-utils.js"></script>
   <script src="a11y-toolbar.js"></script>
+  <script src="theme-toggle.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
