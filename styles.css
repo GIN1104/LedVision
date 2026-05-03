@@ -49,6 +49,9 @@
   --legal-header-bg: rgba(255, 255, 255, 0.95);
   --toolbar-btn-bg: #f8fafc;
   --toolbar-btn-hover-bg: #f1f5f9;
+  /* Левый «клип»: только кубы (~32–36% ширины файла); больше — съедает «VISION» */
+  --logo-graphic-flex: 33%;
+  --logo-text-shift: -33%;
 }
 
 html[data-theme="dark"] {
@@ -241,22 +244,63 @@ a:hover {
   text-decoration: none;
 }
 
-.logo:hover .logo__img {
+.logo--split {
+  direction: ltr;
+  display: inline-flex;
+  align-items: stretch;
+  flex-shrink: 0;
+  height: 2.75rem;
+  aspect-ratio: 400 / 159;
+  max-width: min(300px, 78vw);
+  min-width: 0;
+}
+
+a.logo.logo--split:hover .logo__mark-img,
+a.logo.logo--split:hover .logo__wordmark-img {
   opacity: 0.9;
 }
 
-.logo__img {
-  display: block;
-  height: auto;
-  width: auto;
-  max-height: 2.75rem;
-  max-width: min(300px, 78vw);
-  object-fit: contain;
+.logo__mark {
+  flex: 0 0 var(--logo-graphic-flex);
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 
-.logo__img--footer {
-  max-height: 3rem;
+.logo__wordmark {
+  flex: 1 1 auto;
+  height: 100%;
+  min-width: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.logo__mark-img,
+.logo__wordmark-img {
+  display: block;
+  height: 100%;
+  width: auto;
+  max-width: none;
+  flex-shrink: 0;
+}
+
+.logo__mark-img {
+  object-position: left center;
+}
+
+.logo__wordmark-img {
+  transform: translateX(var(--logo-text-shift));
+}
+
+.logo--footer.logo--split {
+  height: 3rem;
   max-width: min(260px, 72vw);
+}
+
+html[data-theme="dark"] .logo__wordmark-img {
+  filter: brightness(0) invert(1);
 }
 
 .nav {
@@ -1826,8 +1870,8 @@ html[data-theme="dark"] .features .feature {
     max-width: min(44vw, 172px);
   }
 
-  .logo__img {
-    max-height: 2.2rem;
+  .logo.logo--split {
+    height: 2.2rem;
     max-width: 100%;
   }
 
@@ -1942,11 +1986,9 @@ html[data-theme="dark"] .features .feature {
   .header__actions .theme-toggle {
     width: 2.25rem;
     height: 2.25rem;
-    order: 0;
   }
 
   .lang-switch {
-    order: 0;
     flex: 0 1 auto;
     justify-content: center;
     width: auto;

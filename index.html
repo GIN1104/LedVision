@@ -23,15 +23,27 @@
   <div class="site-shell">
   <header class="header">
     <div class="container header__inner">
-      <a href="#top" class="logo">
-        <img
-          class="logo__img"
-          src="assets/Vision_Logo_brand.png"
-          alt="LedVision"
-          width="400"
-          height="159"
-          decoding="async"
-        />
+      <a href="#top" class="logo logo--split" aria-label="LedVision">
+        <span class="logo__mark" aria-hidden="true">
+          <img
+            class="logo__mark-img"
+            src="assets/Vision_Logo_brand.png"
+            alt=""
+            width="400"
+            height="159"
+            decoding="async"
+          />
+        </span>
+        <span class="logo__wordmark" aria-hidden="true">
+          <img
+            class="logo__wordmark-img"
+            src="assets/Vision_Logo_brand.png"
+            alt=""
+            width="400"
+            height="159"
+            decoding="async"
+          />
+        </span>
       </a>
       <nav class="nav" id="nav" aria-label="Main">
         <div class="nav__mobile-head">
@@ -45,7 +57,10 @@
         <a href="#home" data-i18n="nav.home">לבית</a>
         <a href="#contact" data-i18n="nav.contact">צור קשר</a>
       </nav>
-      <div class="header__actions">
+      <div class="header__actions" dir="ltr">
+        <button class="burger" type="button" aria-label="תפריט" aria-expanded="false" id="burger">
+          <span></span><span></span><span></span>
+        </button>
         <button
           type="button"
           class="theme-toggle"
@@ -56,15 +71,12 @@
           <span class="theme-toggle__moon" aria-hidden="true">🌙</span>
           <span class="theme-toggle__sun" aria-hidden="true">☀️</span>
         </button>
+        <a class="btn btn--ghost" href="tel:+74951234567" data-i18n="nav.call" dir="auto">התקשרו</a>
         <div class="lang-switch" id="lang-switch" role="group">
           <button type="button" class="lang-switch__btn is-active" data-set-lang="he" aria-pressed="true">עברית</button>
           <button type="button" class="lang-switch__btn" data-set-lang="en" aria-pressed="false">EN</button>
           <button type="button" class="lang-switch__btn" data-set-lang="ru" aria-pressed="false">RU</button>
         </div>
-        <a class="btn btn--ghost" href="tel:+74951234567" data-i18n="nav.call">התקשרו</a>
-        <button class="burger" type="button" aria-label="תפריט" aria-expanded="false" id="burger">
-          <span></span><span></span><span></span>
-        </button>
       </div>
     </div>
   </header>
@@ -496,15 +508,13 @@
 
   <footer class="footer">
     <div class="container footer__inner">
-      <div class="logo logo--footer">
-        <img
-          class="logo__img logo__img--footer"
-          src="assets/Vision_Logo_brand.png"
-          alt="LedVision"
-          width="320"
-          height="127"
-          decoding="async"
-        />
+      <div class="logo logo--footer logo--split" role="img" aria-label="LedVision">
+        <span class="logo__mark" aria-hidden="true">
+          <img class="logo__mark-img" src="assets/Vision_Logo_brand.png" alt="" width="320" height="127" decoding="async" />
+        </span>
+        <span class="logo__wordmark" aria-hidden="true">
+          <img class="logo__wordmark-img" src="assets/Vision_Logo_brand.png" alt="" width="320" height="127" decoding="async" />
+        </span>
       </div>
       <div class="footer__meta">
         <p class="footer__copy" data-i18n-footer>© 2026 LedVision</p>
